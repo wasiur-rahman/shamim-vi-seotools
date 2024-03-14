@@ -516,6 +516,23 @@ p {
   opacity: 1;
   visibility: visible;
 }
+.header .user_action .shipping_card {
+  position: relative;
+  margin-right: 10px;
+}
+.header .user_action .shipping_card span {
+  position: absolute;
+  width: 55%;
+  height: 57%;
+  left: 45%;
+  top: -25%;
+  background: var(--secondary-color-deep);
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /* home section */
 .home_section {
@@ -536,8 +553,46 @@ p {
   padding-right: 4rem;
 }
 .home_section .right {
-  padding-left: 3rem;
+  transition: 3s ease;
+  -webkit-transition: -webkit-transform 3s ease; /* Safari and older versions of Chrome */
+  -moz-transition: -moz-transform 3s ease; /* Old versions of Firefox */
+  -ms-transition: -ms-transform 3s ease;
 }
+
+.home_section .right {
+  transition: 1s ease-in-out;
+}
+
+/* 
+.home_section.bg-linear-gradient:hover .right {
+  animation-name: sideimage; 
+  animation-duration: 4s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+}
+@keyframes sideimage {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translate(-40px);
+  }
+  50% {
+    transform: translateX(20);
+  }
+  80% {
+    transform: translateX(40);
+  }
+  100% {
+    transform: translateY(0); 
+  }
+  40% {
+    transform: translateY(-20px); 
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+} */
 /* section {
   display: flex;
   align-items: center;
@@ -607,8 +662,8 @@ Why Us
 
   transform: rotateY(360deg);
 }
-#why-us .icon-box .icon-content::after {
-}
+/* #why-us .icon-box .icon-content::after {
+} */
 
 /*=============================
 Why Us
@@ -617,11 +672,11 @@ Why Us
 /*=============================
 Packages
 ===============================*/
-#packages {
-}
+/* #packages {
+} */
 #packages .card {
   border-radius: 1rem;
-  border: 1px solid var(--primary-color-deep);
+  border: 1px solid var(--primary-color);
 }
 #packages .card-title {
   background-color: var(--primary-color-light);
@@ -754,4 +809,134 @@ footer .sub-button {
 footer .sub-button:hover {
   color: var(--primary-color);
   background-color: var(--secondary-color-deep);
+}
+
+/*=============================
+login page
+===============================*/
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #793bca;
+}
+.login-page h4 {
+  color: var(--color-white);
+}
+.login-page .lr-form-body {
+  width: 40%;
+}
+.lr-form-body {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10%;
+  padding: 2rem 4rem;
+}
+.lr-form-body input {
+  border: none;
+  color: var(--color-white);
+  width: 100%;
+  outline: none;
+  position: relative;
+}
+.lr-form-body .lr-form-input {
+  position: relative;
+}
+.lr-form-body .lr-form-input i {
+  position: absolute;
+  color: var(--secondary-color-deep);
+  left: 4%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.lr-form-body .my-lr-form-input {
+  background-color: transparent;
+  border-bottom: 1px solid var(--secondary-color-deep);
+  padding-left: 25px;
+}
+.lr-form-body p {
+  color: var(--color-white);
+}
+.lr-form-body p span {
+  color: var(--secondary-color-deep);
+}
+.lr-form-body .form-check-input {
+  width: 1rem;
+  color: var(--color-white);
+}
+.lr-form-body .form-check {
+  color: var(--color-white);
+}
+.lr-form-body .form-check-input:checked {
+  background-color: var(--secondary-color-deep);
+}
+/*=============================
+Registration page
+===============================*/
+.registration-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #793bca;
+}
+.registration-page h4 {
+  color: var(--color-white);
+}
+.registration-page .lr-form-body {
+  width: 60%;
+}
+
+/*=============================
+Cart page
+===============================*/
+.cart-page .pirce-calculation-box .table tbody td {
+  height: 70px;
+  vertical-align: middle;
+}
+.cart-page .pirce-calculation-box .tb-extra-width1 {
+  width: 40px;
+}
+.cart-page .pirce-calculation-box table thead th {
+  background-color: var(--primary-color-light);
+  color: var(--color-white);
+  font-size: 1.1rem;
+}
+.cart-page .cart-total {
+  background-color: var(--secondary-color);
+  border-radius: 25px;
+}
+.cart-page .cuppon-box input {
+  outline: none;
+  border: none;
+}
+.cart-page .cuppon-box .cpn-box-input {
+  border: 1px solid var(--secondary-color-deep);
+}
+.cart-page .cuppon-box button {
+  border-radius: 0;
+}
+
+/* .cart-page .cart-total table th td {
+  border-radius: 25px;
+} */
+
+/*=============================
+Checkout page
+===============================*/
+.checkout-page .payment-methord .pay-name img {
+  width: 20px;
+  height: 20px;
+}
+.checkout-page .payment-box {
+  background-color: var(--primary-shadow-color);
+  border-radius: 20px;
+  padding: 1rem;
 }

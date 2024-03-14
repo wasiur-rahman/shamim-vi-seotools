@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dropdown Menu Responsive</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-light.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-regular.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-solid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-thin.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <!-- header -->
+
+   <header class="header">
+      <div class="container">
+        <div class="menu_overlay"></div>
+        <div class="header_main">
+          <div class="logo"><a href="">logo here</a></div>
+         <!-- mobile nav menu  -->
+          <div class="mobile_nav">
+            <div class="hamburger_menu">
+              <span></span>
+            </div>
+          </div>
+         <!-- navitem start -->
+          <nav class="nav_menu">
+            <div class="close_mobile_nav">
+              <div class="hamburger_menu">
+                <span></span>
+              </div>
+            </div>
+            <ul class="menu">
+              <li class="menu_item">
+                <a href="">Single Tools</a>
+              </li>
+              <li class="menu_item">
+                <a href="">Package Tools</a>
+              </li>
+              <li class="menu_item menu_item_has_children">
+                <a href="#" data-toggle="sub_menu"
+                  >services <i class="plus"></i
+                ></a>
+                <ul class="sum_menu">
+                  <li class="menu_item">
+                    <a href="">services 1</a>
+                  </li>
+                  <li class="menu_item">
+                    <a href="">services 2</a>
+                  </li>
+                  <li class="menu_item">
+                    <a href="">services 3</a>
+                  </li>
+                  <li class="menu_item">
+                    <a href="">services 4</a>
+                  </li>
+                  <li class="menu_item">
+                    <a href="">services 5</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu_item menu_item_has_children">
+                <a href="#" data-toggle="sub_menu"
+                  >About Us <i class="plus"></i
+                ></a>
+                <ul class="sum_menu">
+                  <li class="menu_item">
+                    <a href="">services 1</a>
+                  </li>
+                  <li class="menu_item">
+                    <a href="">services 2</a>
+                  </li>
+                  <li class="menu_item">
+                    <a href="">services 3</a>
+                  </li>
+                  <li class="menu_item">
+                    <a href="">services 4</a>
+                  </li>
+                  <li class="menu_item">
+                    <a href="">services 5</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <div class="user_action d-flex">
+             <!-- cart -->
+            <div>
+              <button type="button" class="btn custom-btn shipping_card" data-bs-toggle="modal" data-bs-target="#cart">
+                <i class="fa-solid fa-cart-shopping"></i> <span class="total-count">0</span>
+              </button>
+              </div>
+            <div class="login custom-btn btn-1 a-color-1 me-2">
+              <span><i class="fa-solid fa-user-plus"></i></span>
+              <span>Registration</span>
+            </div>
+            
+            <div class="login custom-btn btn-1 a-color-1">
+              <span><i class="fa-solid fa-user"></i></span>
+              <span>Login</span>
+              
+            </div>
+            
+          </div>
+          <!--  navitem end  -->
+        </div>
+      </div>
+    </header>
+    <!-- header end-->
+    <main class="my-5 checkout-page">
+      <div class="container pt-4">
+        <div class="row text-center pb-5">
+          <h1>Checkout</h1>
+        </div>
+        <div class="row pt-4">
+          <div class="col-sm-12 col-md-6">
+            <div class="pb-3">
+              <h4>Billing details</h4>
+            </div>
+            <form class="row g-3">
+              <div class="col-md-6">
+                <label for="firstName" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="firstName">             
+              </div>
+              <div class="col-md-6">
+                <label for="lastName" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="lastName">
+              </div>
+              <div class="col-12">
+                <label for="inputAddress" class="form-label">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+              </div>
+              <div class="col-md-12">
+                <label for="inputCity" class="form-label">City</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              
+              <div class="col-12">
+                <label for="floatingTextarea" class="form-label">Order Notes</label>
+                <textarea  class="form-control"  id="floatingTextarea"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="col-sm-12 col-md-6 payment-box">
+            
+              <h4 class="mb-4">Your Order</h4>
+              <div class="pirce-calculation-box">
+               <table class="table">
+                 <thead>
+                   <tr>
+                     <th>Product</th>
+                     <th>Price</th>
+                   </tr>
+                 </thead>
+                 <tbody>
+                   <tr>
+                     <td>
+                       Chat GPT <span>x</span><span>1</span>
+                     </td>
+                     <td>
+                       5
+                     </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Subtotal
+                      </td>
+                      <td>
+                        5
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Charge
+                      </td>
+                      <td>
+                        2
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <b>Total</b> 
+                      </td>
+                      <td>
+                       <b>7</b> 
+                      </td>
+                    </tr>
+                 </tbody>
+               </table>
+               <!-- payment methord -->
+               <div class="payment-methord my-4">
+                  <h6>Select Payment Methord</h6>
+                  <div class="form-check mt-3">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                   <label class="form-check-label"   for="gridCheck">
+                    <div class="pay-name d-flex gap-3">
+                      Bkash <span><img class="" src="img/bkash-png.png" alt=""></span>
+                    </label>
+                    </div>
+                    
+                  </div>
+               </div>
+
+               <div class="pay-now w-100">
+                <button class="btn custom-btn w-50">
+                  Pay Now
+                </button>
+               </div>
+              </div>
+             
+          </div>
+          </div>
+      </div>
+    </main>
+    
+    <!-- Footer -->
+     <footer class="ct_pt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-6 col-xs-12 pb-sm-4">
+            <div>
+              <h1 class="pb-4">Mylogo</h1>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Tenetur sed a odit quod eos molestias fuga illo quia incidunt!
+                Debitis.
+              </p>
+              <div class="social d-flex gap-3">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-pinterest"></i></a>
+                <a href=""><i class="fa-brands fa-square-instagram"></i></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></i></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-5">
+            <div class="row pe-md-3  pb-sm-4">
+                <div class="col-sm-12 col-md-6  pb-sm-4">
+                    <div class="quick-link">
+                        <h4 class="pb-4">Quick Links</h4>
+                        <ul>
+                            <li><a href="">Disclaimer</a></li>
+                            <li><a href="">Refund Policy</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                            <li><a href="">Terms & Conditions</a></li>
+                            <li><a href="">User Agreement</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6  pb-sm-4">
+                    <div class="contact  pb-sm-4">
+                        <h4 class="pb-4">Contact</h4>
+                        <ul>
+                            <li class="d-flex gap-2"><span><i class="fa-solid fa-phone"></i></span>+8801700000000</li>  
+                            <li class="d-flex gap-2"><span><i class="fa-solid fa-envelope"></i></span>info@tools.com</li>  
+                            <li class="d-flex gap-2"><span><i class="fa-solid fa-location-dot"></i></span>Dhaka Bangladesh</li>  
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            
+          </div>
+          <div class="col-md-3  pb-sm-4">
+            
+                <div class="news-letter">
+                  <h6 class="footer-title pb-3">Newsletter</h6>
+                  <p>Sign up and receive the latest tips via email.</p>
+                  <form action="">
+                    <div>
+                      
+                      <input
+                        type="email"
+                        placeholder="Email"
+                        required
+                        class="py-2 px-3 mt-3"
+                      />
+                      <button class="btn sub-button mt-lg-3 mt-md-3">Subscribe</button>
+                    </div>
+                  </form>
+                </div>
+              
+          </div>
+        </div>
+        <div class="container py-4">
+            <div class="row">
+              <div class="col-md-6 col-sm-12 text-left">
+                &copy;2024 - 2024 ToolsBD Rights Reserved
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <div class="d-flex w-50 gap-1 ms-auto">
+                  <a href=""
+                    ><img
+                      class="img-fluid rounded"
+                      src="asset/image/american-express.jpg"
+                      alt=""
+                  /></a>
+    
+                  <a href=""
+                    ><img
+                      class="img-fluid rounded"
+                      src="asset/image/discover.jpg"
+                      alt=""
+                  /></a>
+    
+                  <a href=""
+                    ><img
+                      class="img-fluid rounded"
+                      src="asset/image/mastercard.jpg"
+                      alt=""
+                  /></a>
+    
+                  <a href=""
+                    ><img
+                      class="img-fluid rounded"
+                      src="asset/image/paypal.jpg"
+                      alt=""
+                  /></a>
+    
+                  <a href=""
+                    ><img
+                      class="img-fluid rounded"
+                      src="asset/image/visa.jpg"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </footer>
+    <!-- jquery -->
+    <script src="js/jquery.3.7.1.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js"></script>
+
+    <!-- Our Javascript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

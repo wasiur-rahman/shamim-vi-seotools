@@ -34,7 +34,7 @@
   <body>
     <!-- header -->
 
-    <header class="header ">
+    <header class="header">
       <div class="container">
         <div class="menu_overlay"></div>
         <div class="header_main">
@@ -106,14 +106,23 @@
             </ul>
           </nav>
           <div class="user_action d-flex">
+            <!-- cart -->
+            <div>
+              <button type="button" class="btn custom-btn shipping_card" data-bs-toggle="modal" data-bs-target="#cart">
+                <i class="fa-solid fa-cart-shopping"></i> <span class="total-count"></span>
+              </button>
+              </div>
             <div class="login custom-btn btn-1 a-color-1 me-2">
               <span><i class="fa-solid fa-user-plus"></i></span>
               <span>Registration</span>
             </div>
+            
             <div class="login custom-btn btn-1 a-color-1">
               <span><i class="fa-solid fa-user"></i></span>
               <span>Login</span>
+              
             </div>
+            
           </div>
           <!-- navitem end -->
         </div>
@@ -121,10 +130,10 @@
     </header>
     <!-- header end-->
     <!-- Home Section Strat -->
-    <section class="home_section bg-linear-gradient">
+    <section class="home_section bg-linear-gradient" id="">
       <div class="container">
         <div class="row">
-          <div class="col-sm-12 col-md-6 d-flex flex-column justify-content-center gap-4 left">
+          <div class="col-sm-12 col-md-6 d-flex flex-column justify-content-center gap-4 left pb-sm-4">
             <h1>Bangladesh's <span class="color-snd">Best Group Buy</span> Tools at Cheaper Price</h1>
             <p>
               Get 200+ Premium Tools Access With Instant Support, 99.9% Uptime
@@ -143,14 +152,14 @@
     <section id="one-stop-solutio" class="ct_pt-5 ">
       <div class="container">
         <div class="row">
-          <div class="col-sm-12 col-md-6 ct_pr-3">
+          <div class="col-sm-12 col-md-6 ct_pr-3 pb-sm-5">
             <img
               src="img/all-in-one.png"
               alt=""
               class="w-100 h-100 img-fluid"
             />
           </div>
-          <div class="col-sm-12 col-md-6 ct_pl-3 gap-4 d-flex justify-content-center flex-column">
+          <div class="col-sm-12 col-md-6 gap-4 d-flex justify-content-center flex-column">
             <h2 class="section-title">One-Stop solution for all your needs.</h2>
             <p class="section-paragraph">
               Unlimited SEO Tools provide access to all the tools and services
@@ -165,7 +174,7 @@
     <section id="choose-package" class="ct_pt-5 ">
       <div class="container">
         <div class="row">
-          <div class="col-sm-12 col-md-6 d-flex flex-column justify-content-center gap-4">
+          <div class="col-sm-12 col-md-6 d-flex flex-column justify-content-center gap-4 pb-sm-5">
             <h2 class="section-title">Choose the Best Package</h2>
             <p class="section-paragraph">
               We offer individual subscriptions as well as combo packages. We
@@ -190,7 +199,7 @@
         <div class="row pb-4">
           <h2 class="section-title">Why Us</h2>
         </div>
-        <div class="row row-cols-sm-3 pt-5">
+        <div class="row row-cols-sm-2 row-cols-1 row-cols-md-3 row-gap-4 pt-5 px-">
           <div class="col">
             <div class="icon-box">
               <div class="icon pt-4">
@@ -259,7 +268,7 @@
             <h2>Our Packages</h2>
           </div>
         </div>
-        <div class="row">
+        <div class="row row-gap-4">
           <div class="col-sm-10 col-md-6 col-lg-4">
             <div class="card">
               <h4 class="card-title">Lite Plan</h4>
@@ -433,7 +442,7 @@
                 <h2>All Tools Pricing</h2>
             </div>
         </div>
-        <div class="row row-cols-md-4 row-cols-sm-3 row-cols-xs-2 pt-4 row-gap-5">
+        <div class="row row-cols-md-3 row-cols-sm-2 row-cols-1 row-cols-lg-4 pt-4 row-gap-5">
         <div class="col">
                 <div class="card">
                     <img src="https://picsum.photos/100/50" class="card-img-top" alt="...">
@@ -442,110 +451,132 @@
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         <div class="d-flex align-items-center justify-content-around">
                           <h4>36 <sup>tk</sup></h4>
-                          <a href="#" class="btn custom-btn">Buy Now</a>
+                          <a href="#" data-name="Banana" data-price="36" class="btn custom-btn add-to-cart">Buy Now</a>
                         </div>
                     </div>
                 </div>
         </div>
         <div class="col">
-          <div class="card">
-              <img src="https://picsum.photos/100/50" class="card-img-top" alt="...">
-              <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <div class="d-flex align-items-center justify-content-around">
-                    <h4>36 <sup>tk</sup></h4>
-                    <a href="#" class="btn custom-btn">Buy Now</a>
-                  </div>
-              </div>
-          </div>
+                <div class="card">
+                    <img src="https://picsum.photos/100/50" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="d-flex align-items-center justify-content-around">
+                          <h4>36 <sup>tk</sup></h4>
+                          <a href="#" data-name="Banana" data-price="36" class="btn custom-btn add-to-cart">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
         </div>
         <div class="col">
-          <div class="card">
-              <img src="https://picsum.photos/100/50" class="card-img-top" alt="...">
-              <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <div class="d-flex align-items-center justify-content-around">
-                    <h4>36 <sup>tk</sup></h4>
-                    <a href="#" class="btn custom-btn">Buy Now</a>
-                  </div>
-              </div>
-          </div>
+                <div class="card">
+                    <img src="https://picsum.photos/100/50" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="d-flex align-items-center justify-content-around">
+                          <h4>36 <sup>tk</sup></h4>
+                          <a href="#" data-name="Banana" data-price="36" class="btn custom-btn add-to-cart">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
         </div>
         <div class="col">
-          <div class="card">
-              <img src="https://picsum.photos/100/50" class="card-img-top" alt="...">
-              <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <div class="d-flex align-items-center justify-content-around">
-                    <h4>36 <sup>tk</sup></h4>
-                    <a href="#" class="btn custom-btn">Buy Now</a>
-                  </div>
-              </div>
-          </div>
+                <div class="card">
+                    <img src="https://picsum.photos/100/50" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="d-flex align-items-center justify-content-around">
+                          <h4>36 <sup>tk</sup></h4>
+                          <a href="#" data-name="Banana" data-price="36" class="btn custom-btn add-to-cart">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
         </div>
         <div class="col">
-          <div class="card">
-              <img src="https://picsum.photos/100/50" class="card-img-top" alt="...">
-              <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <div class="d-flex align-items-center justify-content-around">
-                    <h4>36 <sup>tk</sup></h4>
-                    <a href="#" class="btn custom-btn">Buy Now</a>
-                  </div>
-              </div>
-          </div>
+                <div class="card">
+                    <img src="https://picsum.photos/100/50" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="d-flex align-items-center justify-content-around">
+                          <h4>36 <sup>tk</sup></h4>
+                          <a href="#" data-name="Banana" data-price="36" class="btn custom-btn add-to-cart">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
         </div>
         <div class="col">
-          <div class="card">
-              <img src="https://picsum.photos/100/50" class="card-img-top" alt="...">
-              <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <div class="d-flex align-items-center justify-content-around">
-                    <h4>36 <sup>tk</sup></h4>
-                    <a href="#" class="btn custom-btn">Buy Now</a>
-                  </div>
-              </div>
-          </div>
+                <div class="card">
+                    <img src="https://picsum.photos/100/50" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="d-flex align-items-center justify-content-around">
+                          <h4>36 <sup>tk</sup></h4>
+                          <a href="#" data-name="Banana" data-price="36" class="btn custom-btn add-to-cart">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
         </div>
         <div class="col">
-          <div class="card">
-              <img src="https://picsum.photos/100/50" class="card-img-top" alt="...">
-              <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <div class="d-flex align-items-center justify-content-around">
-                    <h4>36 <sup>tk</sup></h4>
-                    <a href="#" class="btn custom-btn">Buy Now</a>
-                  </div>
-              </div>
-          </div>
+                <div class="card">
+                    <img src="https://picsum.photos/100/50" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="d-flex align-items-center justify-content-around">
+                          <h4>36 <sup>tk</sup></h4>
+                          <a href="#" data-name="Banana" data-price="36" class="btn custom-btn add-to-cart">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
         </div>
         <div class="col">
-          <div class="card">
-              <img src="https://picsum.photos/100/50" class="card-img-top" alt="...">
-              <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <div class="d-flex align-items-center justify-content-around">
-                    <h4>36 <sup>tk</sup></h4>
-                    <a href="#" class="btn custom-btn">Buy Now</a>
-                  </div>
-              </div>
-          </div>
+                <div class="card">
+                    <img src="https://picsum.photos/100/50" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="d-flex align-items-center justify-content-around">
+                          <h4>36 <sup>tk</sup></h4>
+                          <a href="#" data-name="Banana" data-price="36" class="btn custom-btn add-to-cart">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
         </div>
         </div>
-        </div>
+    </div>
+<!-- modal -->
+<div class="modal fade" id="cart" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <table class="show-cart table">
+          
+        </table>
+        <div>Total price: $<span class="total-cart"></span></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Order now</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 </section>
     <!-- Footer -->
     <footer class="ct_pt-5">
       <div class="container">
         <div class="row">
-          <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="col-md-4 col-sm-6 col-xs-12 pb-sm-4">
             <div>
               <h1 class="pb-4">Mylogo</h1>
               <p>
@@ -563,8 +594,8 @@
             </div>
           </div>
           <div class="col-sm-12 col-md-5">
-            <div class="row">
-                <div class="col-sm-12 col-md-6">
+            <div class="row pe-md-3  pb-sm-4">
+                <div class="col-sm-12 col-md-6  pb-sm-4">
                     <div class="quick-link">
                         <h4 class="pb-4">Quick Links</h4>
                         <ul>
@@ -576,8 +607,8 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6">
-                    <div class="contact">
+                <div class="col-sm-12 col-md-6  pb-sm-4">
+                    <div class="contact  pb-sm-4">
                         <h4 class="pb-4">Contact</h4>
                         <ul>
                             <li class="d-flex gap-2"><span><i class="fa-solid fa-phone"></i></span>+8801700000000</li>  
@@ -590,7 +621,7 @@
             
             
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3  pb-sm-4">
             
                 <div class="news-letter">
                   <h6 class="footer-title pb-3">Newsletter</h6>
@@ -604,7 +635,7 @@
                         required
                         class="py-2 px-3 mt-3"
                       />
-                      <button class="btn sub-button mt-3">Subscribe</button>
+                      <button class="btn sub-button mt-lg-3 mt-md-3">Subscribe</button>
                     </div>
                   </form>
                 </div>
@@ -658,7 +689,13 @@
           </div>
       </div>
     </footer>
+    <!-- jquery -->
+    <script src="js/jquery.3.7.1.min.js"></script>
+    
+    <!-- Bootstrap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js"></script>
+
+<!-- Our Javascript -->
     <script src="js/script.js"></script>
   </body>
 </html>
