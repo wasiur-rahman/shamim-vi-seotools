@@ -19,6 +19,7 @@
   --heading-font-family: "Kanit", sans-serif;
   --heading-font-size: 3rem;
   --heading-font-weight: 700;
+  --heading-font-weight-thin: 500;
   --paragraph-font-family: "Catamaran", sans-serif;
   --paragraph-font-size: 1rem;
   --paragrahp-line-height: 1.1rem;
@@ -41,9 +42,19 @@ h4,
 h5,
 h6 {
   font-family: var(--heading-font-family);
-  font-weight: var(--heading-font-weight);
+
   margin: 0;
   padding: 0;
+}
+h1,
+h2,
+h3 {
+  font-weight: var(--heading-font-weight);
+}
+h4,
+h5,
+h6 {
+  font-weight: var(--heading-font-weight-thin);
 }
 h2 {
   font-size: 2.5rem;
@@ -138,6 +149,14 @@ p {
 .section-paragraph {
   color: var(--color-black-light);
 }
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+  vertical-align: middle;
+}
 
 /* .section-title{
     font-size: 3rem;
@@ -155,8 +174,40 @@ p {
 .color-snd {
   color: var(--secondary-color);
 }
-/* Padding margin */
+.my-bg-primary {
+  background-color: var(--primary-color);
+}
 
+.my-bg-primary-deep {
+  background-color: var(--primary-color-deep);
+}
+.my-bg-secondary {
+  background-color: var(--secondary-color);
+}
+.my-bg-secondary-deep {
+  background-color: var(--secondary-color-deep);
+}
+/* color */
+.my-color-primary {
+  color: var(--primary-color);
+}
+.my-color-secondry {
+  color: var(--secondary-color);
+}
+.my-color-secondry-deep {
+  color: var(--secondary-color-deep);
+}
+.my-color-white {
+  color: var(--color-white);
+}
+.my-color-black {
+  color: var(--color-black);
+}
+.my-color-black-light {
+  color: var(--color-black-light);
+}
+
+/* Padding */
 .ct_pt-3 {
   padding-top: 3rem;
 }
@@ -176,6 +227,26 @@ p {
   padding-right: 3rem;
 }
 
+/* Margin */
+.ct_mt-3 {
+  margin-top: 3rem;
+}
+.ct_mt-5 {
+  margin-top: 5rem;
+}
+.ct_mb-3 {
+  margin-bottom: 3rem;
+}
+.ct_my-5 {
+  margin: 5rem 0;
+}
+.ct_ml-3 {
+  margin-left: 3rem;
+}
+.ct_mr-3 {
+  margin-right: 3rem;
+}
+
 /* button */
 .custom-btn {
   padding: 5px 10px;
@@ -191,8 +262,24 @@ p {
   color: var(--secondary-color);
   background-color: var(--primary-color);
 }
-
+.custom-btn-2 {
+  padding: 5px 10px;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: var(--secondary-color-deep);
+  color: var(--color-white);
+}
+.custom-btn-2:hover {
+  color: var(--primary-bg-color);
+  background-color: var(--secondary-color);
+}
 /* header css */
+.ct-shadow {
+  box-shadow: 10px 0px 10px 1px var(--secondary-color-deep);
+}
 .header {
   position: absolute;
   width: 100%;
@@ -211,9 +298,9 @@ p {
   justify-content: space-between;
   align-items: center;
   padding: 10px 0px;
-  -webkit-user-select: none; /* Safari */
-  -ms-user-select: none; /* IE 10 and IE 11 */
-  user-select: none; /* Standard syntax */
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .header .container .header_main .logo {
   /* background: var(--hover-color); */
@@ -239,7 +326,7 @@ p {
   padding: 12px 0px;
   text-transform: capitalize;
   font-size: 16px;
-  color: var(--primary-color);
+  color: var(--text-color);
   font-weight: 600;
   transition: 0.3s ease;
   -webkit-transition: 0.3s ease;
@@ -248,7 +335,7 @@ p {
   -o-transition: 0.3s ease;
 }
 .header .container .header_main .nav_menu .menu > .menu_item > a.active {
-  color: var(--secondary-color);
+  color: var(--primary-bg-full);
 }
 .header .container .header_main .nav_menu .menu > .menu_item > a .plus {
   display: inline-block;
@@ -265,7 +352,7 @@ p {
   box-sizing: border-box;
   top: 50%;
   left: 50%;
-  background: var(--primary-color-deep);
+  background: var(--secondary-color-deep);
   width: 100%;
   height: 2px;
   transform: translate(-50%, -50%);
@@ -295,7 +382,7 @@ p {
   > .menu_item:hover
   > a
   .plus::after {
-  background: var(--secondary-color);
+  background: var(--hover-color);
 }
 .header .container .header_main .nav_menu .menu > .menu_item > a .plus::after {
   transform: translate(-50%, -50%) rotate(-90deg);
@@ -314,7 +401,7 @@ p {
   > .menu_item
   > a:hover,
 .header .container .header_main .nav_menu .menu > .menu_item:hover > a {
-  color: var(--hover-color);
+  color: var(--secondary-color-deep);
 }
 .header .container .header_main .nav_menu .menu > .menu_item > .sum_menu {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -352,6 +439,9 @@ p {
     -moz-transform: translateY(0px);
     -ms-transform: translateY(0px);
     -o-transform: translateY(0px);
+    background: white;
+    border-top: 3px solid var(--secondary-color-deep);
+    border-radius: 5px;
   }
   .header
     .container
@@ -447,7 +537,7 @@ p {
   position: absolute;
   width: 30px;
   height: 3px;
-  background: var(--white-color);
+  background: var(--color-white);
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -488,7 +578,7 @@ p {
   position: absolute;
   width: 30px;
   height: 3px;
-  background: var(--white-color);
+  background: var(--color-white);
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -515,6 +605,128 @@ p {
 .header .menu_overlay.active {
   opacity: 1;
   visibility: visible;
+}
+/* responsive */
+@media screen and (max-width: 991px) {
+  .header .container .header_main .nav_menu {
+    display: block;
+    position: fixed;
+    right: -290px;
+    visibility: hidden;
+    width: 280px;
+    top: 0;
+    height: 100%;
+    z-index: 100;
+    background: var(--color-white);
+    padding: 10px 0px;
+    overflow-y: auto;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+  }
+  .header .container .header_main .nav_menu.open {
+    right: 0px;
+    visibility: visible;
+  }
+  .header .container .header_main .nav_menu.open .close_mobile_nav {
+    display: flex;
+    background-color: var(--primary-color);
+  }
+  .header .container .header_main .nav_menu .menu > .menu_item {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+  .header
+    .container
+    .header_main
+    .nav_menu
+    .menu
+    > .menu_item_has_children
+    > a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header .container .header_main .nav_menu .menu > .menu_item > a {
+    color: var(--text-color);
+    padding: 12px 15px;
+    border-bottom: 1px solid var(--secondary-color-deep);
+  }
+  .header .container .header_main .nav_menu .menu > .menu_item:first-child > a {
+    border-top: 1px solid var(--secondary-color-deep);
+  }
+  .header
+    .container
+    .header_main
+    .nav_menu
+    .menu
+    > .menu_item
+    > a
+    .plus::before,
+  .header
+    .container
+    .header_main
+    .nav_menu
+    .menu
+    > .menu_item
+    > a
+    .plus::after {
+    background: var(--secondary-color-deep);
+  }
+
+  .header .container .header_main .nav_menu .menu > .menu_item > .sum_menu {
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    opacity: 1;
+    visibility: visible;
+    border: none;
+    background: transparent;
+    box-shadow: none;
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    padding: 0px;
+    top: auto;
+    left: auto;
+  }
+  .header
+    .container
+    .header_main
+    .nav_menu
+    .menu
+    > .menu_item
+    > .sum_menu
+    > .menu_item
+    > a {
+    color: var(--text-color);
+    padding: 12px 10px 12px 45px;
+    border-bottom: 1px solid var(--secondary-color-deep);
+  }
+  .header
+    .container
+    .header_main
+    .nav_menu
+    .menu
+    > .menu_item_has_children.active
+    > a
+    .plus::after {
+    transform: translate(-50%, -50%) rotate(0deg);
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+    -moz-transform: translate(-50%, -50%) rotate(0deg);
+    -ms-transform: translate(-50%, -50%) rotate(0deg);
+    -o-transform: translate(-50%, -50%) rotate(0deg);
+  }
+  .header .mobile_nav {
+    display: flex;
+    background-color: var(--primary-color);
+  }
 }
 .header .user_action .shipping_card {
   position: relative;
@@ -562,41 +774,6 @@ p {
 .home_section .right {
   transition: 1s ease-in-out;
 }
-
-/* 
-.home_section.bg-linear-gradient:hover .right {
-  animation-name: sideimage; 
-  animation-duration: 4s;
-  animation-delay: 1s;
-  animation-iteration-count: infinite;
-}
-@keyframes sideimage {
-  0% {
-    transform: translateX(0);
-  }
-  20% {
-    transform: translate(-40px);
-  }
-  50% {
-    transform: translateX(20);
-  }
-  80% {
-    transform: translateX(40);
-  }
-  100% {
-    transform: translateY(0); 
-  }
-  40% {
-    transform: translateY(-20px); 
-  }
-  60% {
-    transform: translateY(-10px);
-  }
-} */
-/* section {
-  display: flex;
-  align-items: center;
-} */
 
 /*=============================
 Why Us
@@ -893,6 +1070,12 @@ Registration page
 .registration-page .lr-form-body {
   width: 60%;
 }
+.registration-page .no-spinner {
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  appearance: textfield;
+  width: 100%;
+}
 
 /*=============================
 Cart page
@@ -939,4 +1122,64 @@ Checkout page
   background-color: var(--primary-shadow-color);
   border-radius: 20px;
   padding: 1rem;
+}
+
+/*=============================
+User Dashboard Page
+===============================*/
+.user-dashboard-page {
+  margin-top: 7rem !important;
+}
+.my-card {
+  border: 1px solid var(--secondary-color-deep) !important;
+}
+.navbar-nav .active {
+  background-color: var(--primary-color);
+  color: var(--color-white);
+}
+.my-card .card-body hr {
+  color: var(--secondary-color-deep) !important;
+}
+.my-card .card-body ul {
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.my-card .card-body ul li {
+  border-bottom: 1px solid var(--primary-color);
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+.my-card .card-body ul li:hover {
+  background-color: var(--primary-color);
+}
+
+.my-card .card-body ul li a:hover {
+  transform: translateX(2px);
+  transition: 0.3s ease;
+  color: var(--color-white);
+}
+.my-card .card-body ul li:first-child {
+  border-radius: 10px 10px 0 0;
+}
+.my-card .card-body ul li:last-child {
+  border-bottom: none;
+}
+/*=============================
+Affiliate Dashboard Page
+===============================*/
+.affiliate-link {
+  outline: none;
+  border: none;
+}
+
+/* Pagination */
+.my-pagination .page-item:first-child .page-link,
+.my-pagination .page-item:last-child .page-link {
+  background-color: var(--primary-color);
+  color: var(--color-white);
+}
+
+.my-pagination .pagination .page-item a {
+  color: var(--secondary-color-deep);
 }

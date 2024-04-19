@@ -240,4 +240,16 @@ $('.show-cart').on("change", ".item-count", function(event) {
 
 displayCart();
 
+
+$('.left-sidebar .my-dropdown').click(function(){
+  let $myDropdownMenu = $(this).find(".my-dropdown-menu");
+  
+  if ($myDropdownMenu.height() !== 100){
+      $('.left-sidebar .my-dropdown-menu').css({'height':'0', 'transition':'1s ease'});
+      $myDropdownMenu.css({'height':'100px', 'transition':'1s ease'});
+  } else {
+      $myDropdownMenu.css({'height':'0', 'transition':'1s ease'});
+  }
+});
+
   

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dropdown Menu Responsive</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="/fontawesome/css/fontawesome.min.css" />
+
+    <!-- <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-light.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-regular.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-solid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-thin.css"
+    /> -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+      rel="stylesheet"
+    /> -->
+
+    <link rel="stylesheet" href="/css/responsive.css" />
+
+    <link rel="stylesheet" href="/css/dashboard.css" />
+
+    <!-- <link rel="stylesheet" type="text/css" href="../css/style.css" /> -->
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid pt-4 my-bg-primary">
+        <div class="row">
+          <div class="col-sm-4 col-xs-12">
+            <div class="left-sidebar">
+              <div class="d-flex gap-4">
+                <img
+                  src="/img/basic-2.svg"
+                  class="img-fluid w-25 h-25"
+                  alt=""
+                />
+                <!-- <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-bars-staggered"></i> -->
+                <h1 class="my-color-white">Logo</h1>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-8 col-xs-12">
+            <h2>Hello Dashboard</h2>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-2 col-xs-12 my-bg-primary pt-4 my-min-h-100">
+            <div class="left-sidebar">
+              <ul>
+                <li class="my-color-white ps-2 pt-2">
+                  <a href="" class="d-flex gap-2 align-items-center"
+                    ><i class="fa-solid fa-bars"></i> <span>Dashboard</span></a
+                  >
+                </li>
+
+                <li class="my-dropdown my-color-white ps-2 pt-2">
+                  <a
+                    ><div class="d-flex align-items-center gap-3">
+                      <i class="fa-solid fa-bars"></i>
+                      Pages
+                    </div></a
+                  >
+                  <ul class="my-dropdown-menu">
+                    <li><a href="">- ABC</a></li>
+                    <li><a href="">- Def</a></li>
+                    <li><a href="">- Ijk</a></li>
+                  </ul>
+                </li>
+                <!-- Product -->
+                <li class="my-dropdown my-color-white ps-2 pt-2">
+                  <a class="d-flex justify-content-between"
+                    ><div class="d-flex align-items-center gap-3">
+                      <i class="fa-solid fa-bars"></i>
+                      Product
+                    </div>
+                    <i class="fa-solid fa-chevron-down fa-fw"></i>
+                  </a>
+                  <ul class="my-dropdown-menu">
+                    <li><a href="">- All Product</a></li>
+                    <li><a href="">- New Product</a></li>
+                    <li><a href="">- Category</a></li>
+                  </ul>
+                </li>
+                <li class="my-color-white ps-2 pt-2">
+                    <a href="users.html" class="d-flex gap-2 align-items-center"
+                      ><i class="fa-solid fa-bars"></i> <span>Users</span></a
+                    >
+                  </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-10 col-xs-12 ps-5">
+            <div class="mt-5">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="card my-border-left-4 my-border-color-primary">
+                            <div class="card-body">
+                                <h5 class="card-title my-color-primary">Total Users</h5>
+                                <p class="card-text">45</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                      <div class="card my-border-left-4 my-border-color-secondary">
+                          <div class="card-body">
+                              <h5 class="card-title my-color-primary">New Users</h5>
+                              <p class="card-text">45</p>
+                          </div>
+                          
+                      </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="card my-border-left-4 my-border-color-primary">
+                        <div class="card-body">
+                            <h5 class="card-title my-color-primary">Active Users</h5>
+                            <p class="card-text">45</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="mt-5">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>SI</th>
+                      <th>Product Name</th>
+                      <th>Price</th>
+                      <th>Category</th>
+                      <th>Tags</th>
+                      <th>Date</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>
+                        <span class="me-2"><img class="rounded-circle img-fluid" src="https://picsum.photos/50" alt=""></span> Ahrefs
+                      </td>
+                      
+                      <td>
+                        ৳20
+                      </td>
+                      <td>
+                        SEO
+                      </td>
+                      <td>
+                        SEO, Keyword Research
+                      </td>
+                      <td>
+                        15 March, 2024
+                      </td>
+                      <td class="d-flex gap-2">
+                        <button class="btn my-primary-btn"><a href="">View</a></button>
+                        <button class="btn my-secondary-btn"><a href="">Edit</a></button>
+                        <button class="btn btn-danger"><a href="">Delete</a></button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <!-- Pagination -->
+                <div class="my-pagination">
+                  <ul class="pagination">
+                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                  </ul>
+                </nav>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- jquery -->
+    <script src="/js/jquery.3.7.1.min.js"></script>
+
+    <!-- Bootstrap -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
+    <script src="/js/bootstrap.min.js"></script>
+    <!-- Our Javascript -->
+    <!-- <script src="../js/script.js"></script> -->
+    <script src="/js/dashboard.js"></script>
+  </body>
+</html>
