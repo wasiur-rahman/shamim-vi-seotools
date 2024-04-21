@@ -252,4 +252,6 @@ $('.left-sidebar .my-dropdown').click(function(){
   }
 });
 
-  
+  // WoW Js
+
+  new WOW().init();
